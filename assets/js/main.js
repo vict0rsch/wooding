@@ -416,25 +416,18 @@
 		const formData = $("#rsvp-form").serializeArray();
 		console.log({ formData });
 		let ajaxData = {};
-		let availability = {
-			"ceremony": false,
-			"pic-nic": false,
-			"festival": false,
-			"soiree": false,
-		}
 		for (const item of formData) {
 			if (item["name"].startsWith("check-")) {
 				if (item["value"] === "on") {
-					availability[item["name"].replace("check-", "")] = true;
+					ajaxData["available-" + item["name"].replace("check-", "")] = "yes";
+				} else {
+					ajaxData["available-" + item["name"].replace("check-", "")] = "no";
 				}
 			} else {
 				ajaxData[item["name"]] = item["value"]
 			}
 
 		}
-
-		ajaxData["availability"] = availability;
-
 		console.log({ ajaxData });
 
 		if (ajaxData["_honey"] === "") {
