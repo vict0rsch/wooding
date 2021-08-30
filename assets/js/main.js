@@ -443,7 +443,7 @@
 				url: 'https://formsubmit.co/ajax/096e924d88c1da22feff9bc7f1f4b00c',
 				dataType: 'json',
 				accepts: 'application/json',
-				data: formData,
+				data: ajaxData,
 				success: (data) => {
 					console.log(data);
 					if (data["success"] === "false") {
