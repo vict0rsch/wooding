@@ -1,13 +1,8 @@
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 
 <head>
-	<title>Dimension by HTML5 UP</title>
+	<title>Wooding - Zhor & Victor - 16 Juillet 2022</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -29,7 +24,9 @@
 			<div class="content">
 				<div class="inner">
 					<h1>Zhor & Victor</h1>
-					<p>Nous nous marions et nous aimerions vous avoir avec nous le 16 Juillet 2022 à Saint-Jorioz. Venez
+					<h3>Wedding @ Woodstock</h3>
+					<p>Nous nous marions et nous aimerions vous avoir avec nous le <strong>16 Juillet 2022</strong> à
+						Saint-Jorioz. Venez
 						avec
 						votre sourire!</p>
 				</div>
@@ -206,7 +203,7 @@
 				Merci de nous dire si vous venez, et à quels moments :)
 				<br />
 				<br />
-				<form method="post" action="https://formsubmit.co/schmidtv@mila.quebec">
+				<form id="rsvp-form">
 					<div class="fields">
 						<div class="field half">
 							<label for="name">Nom</label>
@@ -217,32 +214,32 @@
 							<input type="text" name="email" id="email" required />
 						</div>
 						<div class="field half">
-							<input required type="radio" id="coming" name="amIcoming" value="coming">
+							<input required type="radio" id="coming" name="isComing" value="YES" checked>
 							<label for="coming">Je viens!</label>
 						</div>
 						<div class="field half">
-							<input required type="radio" id="not-coming" name="amIcoming" value="not-coming">
+							<input required type="radio" id="not-coming" name="isComing" value="NO">
 							<label for="not-coming">Je ne peux pas venir</label>
 						</div>
 
-						<div class="field half schedule-boxes" style="display: none;">
-							<input type="checkbox" id="ceremony" name="ceremony">
+						<div class="field half schedule-boxes">
+							<input type="checkbox" id="ceremony" name="check-ceremony">
 							<label for="ceremony">Cérémonie (11h)</label>
 						</div>
 
-						<div class="field half schedule-boxes" style="display: none;">
-							<input type="checkbox" id="pic-nic" name="pic-nic">
+						<div class="field half schedule-boxes">
+							<input type="checkbox" id="pic-nic" name="check-pic-nic">
 							<label for="pic-nic">Pic-nic (12h30)</label>
 						</div>
 
-						<div class="field half schedule-boxes" style="display: none;">
-							<input type="checkbox" id="festival" name="festival">
+						<div class="field half schedule-boxes">
+							<input type="checkbox" id="festival" name="check-festival">
 							<label for="festival">Festival (14h)</label>
 						</div>
 
-						<div class="field half schedule-boxes" style="display: none;">
-							<input type="checkbox" id="soire" name="soire">
-							<label for="soire">Soirée (18h)</label>
+						<div class="field half schedule-boxes">
+							<input type="checkbox" id="soiree" name="check-soiree">
+							<label for="soiree">Soirée (18h)</label>
 						</div>
 						<div class="field">
 							<label for="message">Un message pour nous?</label>
@@ -256,6 +253,10 @@
 						<li><input type="submit" value="Send Message" class="primary" /></li>
 						<li><input type="reset" value="Reset" /></li>
 					</ul>
+					<input type="hidden" name="_subject" value="[wooding] Nouvelle réponse">
+					<input type="text" name="_honey" style="display:none">
+
+
 				</form>
 				<!-- <ul class="icons">
 					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -268,6 +269,23 @@
 			<!-- Elements -->
 			<article id="environs">
 				<h2 class="major">À faire dans les environs</h2>
+
+			</article>
+
+			<!-- Merci -->
+			<article id="merci">
+				<h2 class="major">Merci d'avoir répondu!</h2>
+
+				<p>Si les informations que vous nous avez communiquées venaient à changer, vous pourrez remplir le
+					formulaire à nouveau.</p>
+
+			</article>
+
+			<!-- Erreur -->
+			<article id="erreur">
+				<h2 class="major">Erreur</h2>
+				<p>Oups il y a eu une erreur dans le formulaire</p>
+				<p>Merci de prévenir Victor avec le contenu du formulaire problématique.</p>
 
 			</article>
 

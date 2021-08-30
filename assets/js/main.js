@@ -411,6 +411,55 @@
 		}
 	});
 
+	$("#rsvp-form").submit((event) => {
+		event.preventDefault()
+		const formData = $("#rsvp-form").serializeArray();
+		console.log({ formData });
+		let ajaxData = {};
+		let availability = {
+			"ceremony": false,
+			"pic-nic": false,
+			"festival": false,
+			"soiree": false,
+		}
+		for (const item of formData) {
+			if (item["name"].startsWith("check-")) {
+				if (item["value"] === "on") {
+					availability[item["name"].replace("check-", "")] = true;
+				}
+			} else {
+				ajaxData[item["name"]] = item["value"]
+			}
+
+		}
+
+		ajaxData["availability"] = availability;
+
+		console.log({ ajaxData });
+
+		if (ajaxData["honey"] === "") {
+			$.ajax({
+				method: 'POST',
+				url: 'https://formsubmit.co/ajax/096e924d88c1da22feff9bc7f1f4b00c',
+				dataType: 'json',
+				accepts: 'application/json',
+				data: formData,
+				success: (data) => {
+					console.log(data);
+					if (data["success"] === "false") {
+						window.location.href = "#erreur"
+					} else {
+						window.location.href = "#merci"
+					}
+				},
+				error: (err) => console.log(err)
+			});
+		} else {
+			console.log("Honey provided. Nice try.")
+		}
+
+	})
+
 
 
 })(jQuery);
