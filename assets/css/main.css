@@ -21,7 +21,7 @@ div.item {
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 
 /* #timeline div:after {
@@ -87,7 +87,6 @@ div.item {
   list-style-type: none;
   padding: 0 0 0 75px;
   margin: -1.35rem 0 1em;
-  max-width: 32rem;
   font-size: 1em;
   line-height: 1.2rem;
 }
@@ -502,7 +501,7 @@ blockquote {
 
 code {
   background: rgba(255, 255, 255, 0.075);
-  border-radius: 4px;
+  border-radius: 8px;
   font-family: "Courier New", monospace;
   font-size: 0.9rem;
   margin: 0 0.25rem;
@@ -643,7 +642,7 @@ textarea {
   transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
     background-color 0.2s ease-in-out;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 8px;
   border: solid 1px #ffffff;
   color: inherit;
   display: block;
@@ -763,7 +762,7 @@ input[type="radio"] + label:before {
     background-color 0.2s ease-in-out;
   transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
     background-color 0.2s ease-in-out;
-  border-radius: 4px;
+  border-radius: 8px;
   border: solid 1px #ffffff;
   content: "";
   display: inline-block;
@@ -792,7 +791,7 @@ input[type="radio"]:focus + label:before {
 }
 
 input[type="checkbox"] + label:before {
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 input[type="radio"] + label:before {
@@ -827,7 +826,7 @@ input[type="radio"] + label:before {
 /* Box */
 
 .box {
-  border-radius: 4px;
+  border-radius: 8px;
   border: solid 1px #ffffff;
   margin-bottom: 2rem;
   padding: 1.5em;
@@ -885,7 +884,7 @@ input[type="radio"] + label:before {
 /* Image */
 
 .image {
-  border-radius: 4px;
+  border-radius: 8px;
   border: 0;
   display: inline-block;
   position: relative;
@@ -895,7 +894,7 @@ input[type="radio"] + label:before {
   pointer-events: none;
   background-image: url("../../images/overlay.png");
   background-color: rgba(19, 21, 25, 0.5);
-  border-radius: 4px;
+  border-radius: 8px;
   content: "";
   display: block;
   height: 100%;
@@ -907,7 +906,7 @@ input[type="radio"] + label:before {
 }
 
 .image img {
-  border-radius: 4px;
+  border-radius: 8px;
   display: block;
 }
 
@@ -1255,7 +1254,7 @@ button,
   -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 8px;
   border: 0;
   box-shadow: inset 0 0 0 1px #ffffff;
   color: #ffffff !important;
@@ -1607,7 +1606,7 @@ body.is-preload #bg:before {
   list-style: none;
   padding-left: 0;
   border: solid 1px #ffffff;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 #header nav ul li {
@@ -1801,13 +1800,13 @@ body.is-preload #header .content .inner {
     -webkit-transform 0.325s ease-in-out;
   -ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
   transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
-  padding: 4.5rem 3.5rem 1.5rem 3.5rem;
+  padding: 4.5rem 10% 1.5rem 10%;
   position: relative;
   width: 75%;
   min-width: 300px;
   max-width: 1200px;
   background-color: rgba(27, 31, 34, 0.85);
-  border-radius: 4px;
+  border-radius: 8px;
   opacity: 0;
 }
 
