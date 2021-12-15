@@ -336,12 +336,16 @@
       $main._show(location.hash.substr(1), true);
     });
 
-  $('input:radio[name="amIcoming"]').change(function () {
-    if ($(this).val() == "coming") {
+  $('input:radio[name="isComing"]').change(function () {
+    if ($(this).val() === "YES") {
       $(".schedule-boxes").fadeIn();
     } else {
       $(".schedule-boxes").fadeOut();
     }
+  });
+
+  $("#resetForm").click(function () {
+    $("#coming").click();
   });
 
   $("#rsvp-form").submit((event) => {
