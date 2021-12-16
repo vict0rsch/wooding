@@ -339,6 +339,7 @@
   $('input:radio[name="isComing"]').change(function () {
     if ($(this).val() === "YES") {
       $(".schedule-boxes").fadeIn();
+      $(".rsvp-checkbox").prop("checked", true);
     } else {
       $(".schedule-boxes").fadeOut();
     }
@@ -346,6 +347,7 @@
 
   $("#resetForm").click(function () {
     $("#coming").click();
+    $(".rsvp-checkbox").prop("checked", true);
   });
 
   $("#rsvp-form").submit((event) => {
