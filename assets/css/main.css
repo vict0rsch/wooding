@@ -1802,9 +1802,9 @@ body.is-preload #header .content .inner {
   transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
   padding: 4.5rem 10% 1.5rem 10%;
   position: relative;
-  width: 75%;
+  /* width: 95%; */
   min-width: 300px;
-  max-width: 1200px;
+  max-width: 1000px;
   background-color: rgba(27, 31, 34, 0.85);
   border-radius: 8px;
   opacity: 0;
