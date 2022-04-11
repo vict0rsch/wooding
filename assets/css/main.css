@@ -1958,11 +1958,11 @@ figcaption {
 
 .grid {
   display: grid;
-  grid-auto-flow: column;
   grid-auto-columns: 90%;
   grid-gap: 1em;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
+  justify-content: center;
   padding: 2em 1em;
 }
 @media all and (min-width: 600px) {
