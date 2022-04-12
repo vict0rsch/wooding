@@ -1954,6 +1954,8 @@ figcaption {
   /* font-size: 0.8em; */
   line-height: 1.2;
   color: white;
+  margin-top: -6px;
+  margin-bottom: 6px;
 }
 
 .grid {
